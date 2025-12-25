@@ -1,7 +1,7 @@
 # 🛡️ Threat Analysis: Keylogging Attacks & Mitigation
 
 **Report Date:** December 2025
-**Author:** [Your Name]
+**Author:** Mohib Ilyass
 
 ## 1. Executive Summary
 Keylogging (Keystroke Logging) remains one of the most pervasive threats to endpoint security. Unlike network sniffing, which can be defeated by encryption (TLS/SSL), keylogging attacks the input chain **before encryption occurs**. This report analyzes the mechanics of the attack, simulated via the `KeyLogSim` tool, and outlines defense strategies.
