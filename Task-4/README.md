@@ -36,7 +36,7 @@ I used **SMOTE (Synthetic Minority Over-sampling Technique)** with a sampling st
 The model was evaluated on a test set of roughly 57,000 transactions.
 
 ### Confusion Matrix
-![Confusion Matrix](screenshots/confusion_matrix.png)
+![Confusion Matrix](screenshots/confusion_matrix.PNG)
 
 ### Key Metrics:
 * **Detection Rate (Recall): ~86%**
