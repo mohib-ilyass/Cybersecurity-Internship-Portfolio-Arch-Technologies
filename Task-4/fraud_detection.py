@@ -39,18 +39,16 @@ print(f"Original Fraud Count: {sum(y_train == 1)}")
 print(f"Resampled Fraud Count: {sum(y_train_resampled == 1)}")
 
 # 4. Train the Model
-# 4. Train the Model (OPTIMIZED FOR SPEED)
 print("Training Random Forest Model...")
 
 # n_jobs=-1 tells the computer to use ALL CPU cores.
-# n_estimators=50 reduces the number of trees (faster, slightly less accurate).
 # max_depth=10 prevents the trees from getting too complex.
 rf_model = RandomForestClassifier(
     n_estimators=50, 
     max_depth=10, 
     n_jobs=-1, 
     random_state=42,
-    verbose=1  # This will show you a progress bar!
+    verbose=1  # This will show a progress bar!
 )
 
 rf_model.fit(X_train_resampled, y_train_resampled)
@@ -64,7 +62,7 @@ sns.heatmap(cm, annot=True, fmt='d', cmap='Blues')
 plt.title('Confusion Matrix')
 plt.ylabel('Actual')
 plt.xlabel('Predicted')
-plt.show() # Take a screenshot of this for your report!
+plt.show() 
 
 print("\n--- Classification Report ---")
 print(classification_report(y_test, y_pred))
